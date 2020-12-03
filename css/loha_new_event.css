@@ -1,0 +1,79 @@
+/* header */
+.header{
+    background: url("../images/hola/wechat_main.png") no-repeat center center;
+    background-size: cover;
+}
+
+/* main */
+.new_event{
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+}
+.new_event h3,.new_event .content h6{
+    text-align: center;
+}
+.new_event h6{
+    padding: 2rem;
+}
+.new_event .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+}
+.content .activity{
+    width: 49%;
+    margin: .2rem;
+    border: 1px solid #000000;
+}
+.content .activity a{
+    color: #000000;
+}
+.content .act_img img{
+    width: 100%;
+}
+.content .activity p{
+    padding: 2rem;
+    padding-bottom: 5rem;
+    letter-spacing: .5rem;
+}
+
+/* RWD */
+@media (max-width:1200px){
+    .new_event{
+        width: 90%;
+    }
+    .new_event h3{
+        letter-spacing: .4rem;
+    }
+}
+@media (max-width:1024px){
+    .new_event .content{
+        display: block;
+    }
+    .new_event .content .activity{
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+@media (max-width:600px){
+    .new_event{
+       width: 100%;
+    }
+    .new_event .content .activity{
+        width: 95%;
+    }
+}
+@media (max-width:380px){
+    .new_event h3{
+        padding: 1.5rem 2.5rem;
+        letter-spacing: .6rem;
+    }
+    .content .activity p{
+        padding: 1rem;
+        padding-bottom: 5rem;
+        letter-spacing: .4rem;
+    }
+}

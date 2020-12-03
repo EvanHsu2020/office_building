@@ -1,0 +1,261 @@
+.traffic{
+    text-align: center;
+    padding: 4rem 1rem;
+    letter-spacing: 6px;
+    width: 80%;
+    margin: auto;
+}
+.traffic h3{
+    margin: 1.5rem;
+}
+h6,.vehicle{
+    padding: 1rem;
+}  
+
+        /*bus*/
+.traffic_way{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+}
+.way{
+    margin: 2.5rem;
+}
+.way1{
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+.way2{
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+.way3{
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+.way4{
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
+.line{
+    display: grid;
+    display: -ms-grid;
+    color: rgba(3,109,126,.8);
+    text-align: right;
+    font-weight: 700;
+}
+.way .line{
+    grid-template-columns:repeat(5,1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.way1 .line p:first-child,.way1 .line p:nth-child(6),.way1 .line p:nth-child(11),
+.way2 .line p:first-child,.way3 .line p:nth-child(2),.way3 .line p:nth-child(7),
+.way3 .line p:nth-child(12),.way4 .line p:nth-child(2),.way4 .line p:nth-child(7),
+.way4 .line p:nth-child(12){
+    -ms-grid-column: 1;
+}
+.way1 .line p:nth-child(2),.way1 .line p:nth-child(7),.way1 .line p:nth-child(12),
+.way2 .line p:nth-child(2),.way3 .line p:nth-child(3),.way3 .line p:nth-child(8),
+.way3 .line p:nth-child(13),.way4 .line p:nth-child(3),.way4 .line p:nth-child(8),
+.way4 .line p:nth-child(13){
+    -ms-grid-column: 2;
+}
+.way1 .line p:nth-child(3),.way1 .line p:nth-child(8),.way2 .line p:nth-child(3),
+.way3 .line p:nth-child(4),.way3 .line p:nth-child(9),.way3 .line p:nth-child(14),
+.way4 .line p:nth-child(4),.way4 .line p:nth-child(9),.way4 .line p:nth-child(14){
+    -ms-grid-column: 3;
+}
+.way1 .line p:nth-child(4),.way1 .line p:nth-child(9),.way2 .line p:nth-child(4),
+.way3 .line p:nth-child(5),.way3 .line p:nth-child(10),.way3 .line p:nth-child(15),
+.way4 .line p:nth-child(5),.way4 .line p:nth-child(10),.way4 .line p:nth-child(15){
+    -ms-grid-column: 4;
+}
+.way1 .line p:nth-child(5),.way1 .line p:nth-child(10),.way2 .line p:nth-child(5),
+.way3 .line p:nth-child(6),.way3 .line p:nth-child(11),.way3 .line p:nth-child(16),
+.way4 .line p:nth-child(6),.way4 .line p:nth-child(11),.way4 .line p:nth-child(16){
+    -ms-grid-column: 5;
+}
+.train .line p:last-child,.way1 .line p:nth-child(6),.way1 .line p:nth-child(7),.way1 .line p:nth-child(8),
+.way1 .line p:nth-child(9),.way1 .line p:nth-child(10),.way3 .line p:nth-child(2),.way3 .line p:nth-child(3),
+.way3 .line p:nth-child(4),.way3 .line p:nth-child(5),.way3 .line p:nth-child(6),
+.way4 .line p:nth-child(2),.way4 .line p:nth-child(3),.way4 .line p:nth-child(4),
+.way4 .line p:nth-child(5),.way4 .line p:nth-child(6){
+    -ms-grid-row: 2;
+}
+.way1 .line p:nth-child(11),.way1 .line p:nth-child(12),.way3 .line p:nth-child(7),
+.way3 .line p:nth-child(8),.way3 .line p:nth-child(9),.way3 .line p:nth-child(10),
+.way3 .line p:nth-child(11),.way4 .line p:nth-child(7),.way4 .line p:nth-child(8),
+.way4 .line p:nth-child(9),.way4 .line p:nth-child(10),.way4 .line p:nth-child(11){
+    -ms-grid-row: 3;
+}
+.way3 .line p:nth-child(12),.way3 .line p:nth-child(13),.way3 .line p:nth-child(14),
+.way3 .line p:nth-child(15),.way3 .line p:nth-child(16),.way4 .line p:nth-child(12),
+.way4 .line p:nth-child(13),.way4 .line p:nth-child(14),.way4 .line p:nth-child(15),
+.way4 .line p:nth-child(16){
+    -ms-grid-row: 4;
+}
+.way3 .line div,.way4 .line div{
+    -ms-grid-row: 1;
+}
+.way3 .line div,.way4 .line div{
+    grid-column: 1/6;
+    -ms-grid-column-span: 6;
+    display: flex;
+    justify-content: center;
+}
+.line p:nth-child(5)::after,
+.line p:nth-child(10)::after,
+.way3 .line div p:nth-child(2)::after,
+.way3 .line p:nth-child(6)::after,
+.way3 .line p:nth-child(11)::after,
+.way4 .line div p:nth-child(3)::after,
+.way4 .line p:nth-child(6)::after,
+.way4 .line p:nth-child(11)::after,
+.others_way .line p::after{
+    content: "";
+}
+.line p:after,.way3 .line p:nth-child(5)::after,
+.way3 .line p:nth-child(10)::after,
+.way4 .line p:nth-child(5)::after,
+.way4 .line p:nth-child(10)::after{
+    content: "|";
+}
+.way3 .line div p:nth-child(1)::after,
+.way4 .line div p:nth-child(1)::after,
+.way4 .line div p:nth-child(2)::after{
+    padding: 0 6px;
+}
+.pos{
+    display: none;
+}
+
+/*others way*/
+.others_way{
+    display: flex;
+}
+.train .line,.boat .line{
+    text-align: center;
+    margin: auto;
+    -ms-grid-columns: 1fr;
+}
+.vehicle,.train,.boat{
+    width: 100%;
+}
+.traffic_map{
+    width: 100%;
+    height: 100vh;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    zoom: 5;
+    padding: 1rem 0;
+    -ms-zoom: 1;
+}
+
+@media screen and (max-width:1200px){
+    .traffic{
+        width: 90%;
+    }
+    .way .line{
+        grid-template-columns:repeat(4,1fr);
+    }
+    .way3 .line div{
+        grid-column: 1/5;
+    }
+    .way4 .line div{
+        grid-column: 1/4;
+    }
+    .way4 .line p:last-child{
+        grid-column: 3/5;
+    }
+    .way4 .line div p:nth-child(2){
+        display: none;
+    }
+    .pos{
+        display: block;
+    }
+    .line p:nth-child(4)::after,
+    .line p:nth-child(8)::after,
+    .line p:nth-child(12)::after,
+    .way3 .line p:nth-child(5)::after,
+    .way3 .line p:nth-child(9)::after,
+    .way3 .line p:nth-child(13)::after,
+    .way4 .line p:nth-child(2)::after,
+    .way4 .line p:nth-child(10)::after,
+    .way4 .line p:nth-child(14)::after,
+    .way4 .line p:last-child::after{
+        content: "";
+    }
+    .line p:nth-child(5)::after,
+    .line p:nth-child(10)::after,
+    .way3 .line p:nth-child(4)::after,
+    .way3 .line p:nth-child(6)::after,
+    .way3 .line p:nth-child(8)::after,
+    .way3 .line p:nth-child(11)::after,
+    .way3 .line p:nth-child(12)::after,
+    .way4 .line div p:nth-child(3)::after,
+    .way4 .line p:nth-child(4)::after,
+    .way4 .line p:nth-child(8)::after,
+    .way4 .line p:nth-child(11)::after,
+    .way4 .line p:nth-child(12)::after{
+        content: "|";
+    }
+}
+
+@media screen and (max-width:1100px){
+    .traffic{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:930px){
+    .traffic_way{
+        width: 80%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .traffic{
+        padding: 0;
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+    .traffic_way{
+        width: 100%;
+    }
+    .way{
+        margin: 2.5rem;
+    }
+    .way4 .line div{
+        justify-content: flex-end;
+    }
+    .line{
+        margin: 0;
+    }
+    .others_way{
+        display: block;
+    }
+    .train{
+        padding: 4rem 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .boat{
+        padding-top: 4rem;
+    }
+    iframe{
+        zoom: 4;
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width:320px){
+    .way{
+        margin: 1rem;
+    }
+}

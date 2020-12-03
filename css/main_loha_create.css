@@ -1,0 +1,112 @@
+.building_offer{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.building_offer .offer p{
+    font-size: 5rem;
+    padding: 0 3rem;
+    letter-spacing: 1rem;
+    z-index: 1;
+}
+.building_offer .offer_office p:after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 25%;
+    height: 50%;
+    background: #006D7F;
+    z-index: -1;
+}
+.building_offer .offer_business p:after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 20%;
+    height: 50%;
+    background: #005786;
+    z-index: -1;
+}
+
+/*RWD*/
+@media (max-width:1280px){
+    .building_offer .offer_office p:after{
+        width: 30%;
+    }
+    .building_offer .offer_business p:after{
+        width: 25%;
+    }
+}
+
+@media (max-width:1080px){
+    .building_offer .offer p{
+        font-size: 3.5rem;
+    }
+    .building_offer .offer_office p:after{
+        width: 30%;
+    }
+    .building_offer .offer_business p:after{
+        width: 25%;
+    }
+}
+
+@media (max-width:850px){
+    .building_offer .offer p{
+        padding: 0 1rem;
+        letter-spacing: .5rem;
+    }
+    .building_offer .offer_office p:after{
+        width: 30%;
+    }
+    .building_offer .offer_business p:after{
+        width: 25%;
+    }
+}
+
+@media (max-width:768px){
+    .building_offer .offer p{
+        font-size: 3rem;
+    }
+    .building_offer .offer_office p:after{
+        width: 30%;
+    }
+    .building_offer .offer_business p:after{
+        width: 25%;
+    }
+}
+
+@media (max-width:600px){
+    .building_offer .offer p{
+        font-size: 2.5rem;
+    }
+    .building_offer .offer_office p:after{
+        width: 35%;
+    }
+    .building_offer .offer_business p:after{
+        width: 30%;
+    }
+}
+
+@media (max-width:468px){
+    .building_offer .offer p{
+        padding: 0 .5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:360px){
+    .building_offer .offer p{
+        padding: 0 .5rem;
+        letter-spacing: 0;
+    }
+    .building_offer .offer_office p:after{
+        width: 40%;
+    }
+    .building_offer .offer_business p:after{
+        width: 35%;
+    }
+}

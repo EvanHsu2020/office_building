@@ -1,0 +1,283 @@
+.main{
+    margin-top: 5%;
+}
+        /*switch_tab*/
+.tab_title{
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: auto;
+}
+.radio_switch1,.radio_switch2{
+    text-align: center;
+    color: #000;
+    border: 2px solid black; 
+    letter-spacing: 4px;
+    padding: 1rem 0;
+    margin: 0 .5rem;   
+    max-width: 200px;
+    width: 100%;
+}
+.radio_switch1:hover,.radio_switch2:hover{
+    color: #000;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded{
+    z-index: 0 ;
+}
+
+.switch{
+    color: #fff;
+    background: #036D7E;
+    border: 2px solid #036D7E; 
+}
+.switch:hover{
+    color: #fff;
+}
+.tab02{
+    display: none;
+}
+        /* tab01*/
+.tab_cont{
+    text-align: center;
+}
+.tab_logo{
+    margin: 3rem 0;
+}
+.view_down img{
+    width: 100%;
+}
+.view_top,.view_down p{
+    margin: 4rem;
+    letter-spacing: .4rem;
+    font-weight: 700;
+}
+.view_top h2{
+    margin-bottom: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+        /* tab02*/
+.tab_w{
+    width: 80%;
+    margin: auto;
+}
+.tab_w h2{
+    margin-top: 3rem;
+}
+.main_demo{
+    margin: 2rem auto;
+}
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+/*carousel*/
+.owl-nav{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 25%;
+    z-index: -1;
+}
+.owl-carousel .owl-dots.disabled, 
+.owl-carousel .owl-nav.disabled{
+    display: block;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+}
+.owl-next{
+    left: -5%;
+}
+.owl-prev{
+    right: -5%;
+}
+.owl-next::before,.owl-prev::before{    /*偽文字*/
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 700;
+    font-size: 24px; 
+    padding: .5rem 1rem;
+}
+.owl-next::before{
+    content: '\f0d9'; 
+}
+.owl-prev::before{
+    content: '\f0da';  
+}
+.owl-prev span,.owl-next span{
+    display: none;
+}
+
+.item{
+    position: relative;
+}
+.item img{
+    margin: auto;
+}
+.item:before{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+}
+.item1::before{
+    content: "上海";
+    font-size: 36px;
+    top: 50%;
+}
+.item2::before{
+    content: "星扬西岸中心";
+    bottom: 0;
+}
+.item3::before{
+    content: "恒基名人商业大廈";
+    bottom: 0;
+}
+.item4::before{
+    content: "六八八广場";
+    bottom: 0;
+}
+
+/*company*/
+.company{
+    background: #D2D2CA;
+    width: 100%;
+    padding: 4rem;
+}
+.com_all.container{
+    display: flex;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+.com_map,.com_txt,table{
+   width: 100%;
+}
+.com_txt{
+    padding: 0 1.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+th{
+    color: #036D7E;
+    font-size: 36px;
+    letter-spacing: 1rem;
+    padding-bottom: 1rem;
+}
+td{
+    padding: 1rem 0;
+    letter-spacing: .2rem;
+}
+
+@media screen and (max-width:1200px){
+    .owl-carousel .owl-dots.disabled, 
+    .owl-carousel .owl-nav.disabled,
+    .owl-carousel .owl-dots,
+    .owl-carousel .owl-nav{
+        display: none;
+    }
+    .com_map img{
+        width: 100%;
+    }
+    .com_all.container{
+        display: block;
+    }
+    .com_txt{
+        padding: 2rem 0;
+    }
+    td{
+        width: 50%;
+    }
+    .view_top h2{
+        letter-spacing: .6rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    .tab_title{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab_title a{
+        margin: 1rem;
+    }
+    .tab_logo img{
+        width: 70%;
+    }
+    .view_top,.view_down p{
+        margin: auto;
+        padding: 3rem;
+    }
+    .container, .container-sm{
+        max-width: 100%;
+    }
+    .container, 
+    .container-fluid, 
+    .container-lg, .container-md, 
+    .container-sm, .container-xl{
+        padding: 0;
+    }
+    .view_top h2{
+        letter-spacing: .2rem;
+    }
+    .view_top p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .view_top h2{
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width:480px){
+    .company{
+        padding: 1rem;
+    }
+    .com_txt{
+        text-align: start;
+        padding: .5rem;
+    }
+    .com_txt th{
+        font-size: 22px;
+    }
+    .view_top h2{
+        letter-spacing: 1.4rem;
+    }
+}
+
+@media screen and (max-width:425px){
+    .view_top h2{
+        letter-spacing: 1rem;
+    }
+}
+
+@media screen and (max-width:385px){
+    .view_top h2{
+        letter-spacing: .8rem;
+    }
+}
+
+@media screen and (max-width:365px){
+    .view_top h2{
+        letter-spacing: .6rem;
+    }
+}
+
+@media screen and (max-width: 345px){
+    .view_top h2{
+        letter-spacing: .4rem;
+    }
+}
+@media screen and (max-width:327px){
+    .view_top h2{
+        letter-spacing: .2rem;
+    }
+}
