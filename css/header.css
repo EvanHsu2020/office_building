@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Barlow', sans-serif,'Noto Sans SC';
+    box-sizing: border-box;
 }
 html{
     width: 100%;

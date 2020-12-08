@@ -132,15 +132,15 @@
     top: 50%;
 }
 .item2::before{
-    content: "星扬西岸中心";
+    content: "北京wfc";
     bottom: 0;
 }
 .item3::before{
-    content: "恒基名人商业大廈";
+    content: "上海星扬";
     bottom: 0;
 }
 .item4::before{
-    content: "六八八广場";
+    content: "上海恒基名人";
     bottom: 0;
 }
 

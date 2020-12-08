@@ -62,7 +62,7 @@
     letter-spacing: .4rem;
 }
 .content1 img{
-    width: 100%;
+    width: 80%;
 }
 
 .content2{
@@ -339,7 +339,6 @@
         top: 96%;
         left: 15%;
     }
-
     .content3 .title_loha{
         width: 90%;
     }
@@ -432,6 +431,12 @@
     }
 
 }
+@media screen and (max-width: 365px){
+    .content3 .title_loha h3{
+        padding: 1.5rem .2rem;
+    }
+}
+
 @media screen and (max-width: 325px){
     .content4 .title_txt h3{
         width: 100%;

@@ -33,13 +33,7 @@
     width: 100%;
     height: 100%;
 }
-.office_pic::before{
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, .4);
-    width: 100%;
-    height: 100%;
-}
+
 .office_cont{
     padding: 5rem 0;
     width: 80%;
@@ -66,7 +60,7 @@
 }
 .zone_star{
     position: absolute;
-    top: 5%;
+    bottom: 15%;
     left: 10%;
     width: 35%;
     color: #eeeeee;
@@ -368,7 +362,7 @@
 }
 @media screen and (max-width:1450px){
     .zone_star{
-        top: -8%;
+        
     }
     .star1_txt,.star2_txt{
         grid-template-columns: .6fr .4fr;
@@ -468,7 +462,7 @@
         width: 80%;  
     }
     .zone_star{
-        top: -45%;
+       bottom: 60%;
     }
     .star_map img{
         width: 100%;
@@ -553,7 +547,7 @@
 }
 @media screen and (min-width:1024px) and (max-width:1200px){
     .five_brand{
-        height: 110vh;
+        height: 90vh;
     }
 }
 
@@ -564,11 +558,11 @@
     .five_brand{
         display: block;
         text-align: center;
-        height: 150vh;
+        height: 200vh;
     }
     .zone_star{
         width: 45%;
-        top: -65%;
+        bottom: 90%;
     }
     .star1 h2,.star2 h2{
         font-size: 28px;
@@ -594,7 +588,6 @@
         letter-spacing: .6rem;
     }
     .zone_star{
-        top: -90%;
         width: 60%;
     }
     .concept_img{
@@ -625,13 +618,9 @@
     }
     .zone_star{
         width: 90%;
-        top: -120%;
     }
     .concept_img{
         width: 80%;
-    }
-    .five_brand{
-        height: 150vh;
     }
     .concept_txt h3{
         letter-spacing: .2rem;
@@ -681,7 +670,7 @@
         height: 205vh;
     }
     .zone_star{
-        top: -165%;
+        
     }
     .concept_img{
         top: -2%;
@@ -785,7 +774,7 @@
         bottom:18%
     }
     .zone_star{
-        top: -190%;
+        
     }
     .arrow_2{
         top: 25%;
@@ -813,7 +802,7 @@
         height: 250vh;
     }
     .zone_star{
-        top: -230%;
+        
     }
     .concept_txt{
         padding-top: 12rem;
@@ -834,3 +823,4 @@
         bottom: 30%;
     }
 }
+

@@ -1,6 +1,6 @@
 .traffic{
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 4rem 0;
     letter-spacing: 6px;
     width: 80%;
     margin: auto;
@@ -9,7 +9,7 @@
     margin: 1.5rem;
 }
 h6,.vehicle{
-    padding: 1rem;
+    padding: 1rem 0;
 }  
 
         /*bus*/
@@ -21,7 +21,7 @@ h6,.vehicle{
     -ms-grid-rows: 1fr 1fr;
 }
 .way{
-    margin: 2.5rem;
+    margin: 1.2rem;
 }
 .way1{
     -ms-grid-column: 1;
@@ -218,9 +218,22 @@ iframe{
         margin: auto;
         grid-template-columns: 1fr;
     }
+    .way4 .line div{
+        grid-column: 2/4;
+    }
+    .way4 .line p:nth-child(2){
+        text-align: left;
+    }
 }
 
-@media screen and (min-width:320px) and (max-width:600px){
+@media screen and (max-width:840px){
+    .way4 .line div{
+        grid-column: 1/4;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:600px){
     .traffic{
         padding: 0;
         font-size: 12px;
@@ -241,6 +254,9 @@ iframe{
     .others_way{
         display: block;
     }
+    .vehicle{
+        padding: 0;
+    }
     .train{
         padding: 4rem 0;
         border-top: 1px solid black;
@@ -254,6 +270,16 @@ iframe{
         padding-bottom: 0;
     }
 }
+
+@media screen and (max-width:360px){
+    .way{
+        margin: 1.2rem;
+    }
+    .way4 .line p:nth-child(2){
+        text-align: right;
+    }
+}
+
 @media screen and (max-width:320px){
     .way{
         margin: 1rem;
